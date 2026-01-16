@@ -7,7 +7,13 @@
 
 <style>
 body{margin:0;font-family:Arial;background:#f2f4f7}
-header{background:#0d6efd;color:#fff;padding:25px;text-align:center}
+header{background:#0d6efd;color:#fff;padding:30px 15px;text-align:center}
+header .cta{margin-top:15px}
+header .cta a{
+  display:inline-block;margin:6px;padding:12px 18px;
+  background:#25D366;color:#fff;text-decoration:none;
+  border-radius:8px;font-weight:bold
+}
 section{background:#fff;margin:15px;padding:15px;border-radius:12px}
 h2{color:#0d6efd;margin-top:0}
 .operator{display:flex;gap:15px;align-items:center}
@@ -15,56 +21,44 @@ h2{color:#0d6efd;margin-top:0}
 
 .grid{display:grid;grid-template-columns:1fr 1fr;gap:10px}
 .card{
-  display:block;
-  border:1px solid #ddd;
-  padding:14px;
-  border-radius:10px;
-  text-align:center;
-  font-weight:bold;
-  text-decoration:none;
-  color:#000;
+  display:block;border:1px solid #ddd;padding:14px;border-radius:10px;
+  text-align:center;font-weight:bold;text-decoration:none;color:#000
 }
 .card:hover{background:#0d6efd;color:#fff}
 .price{font-size:13px;color:#198754}
+
+.trust{
+  display:grid;grid-template-columns:1fr 1fr;gap:10px;
+}
+.trust div{
+  background:#e9f5ff;padding:10px;border-radius:8px;font-size:14px
+}
 
 .pay{text-align:center}
 .pay img{width:220px;border:1px solid #ccc;border-radius:10px}
 
 .btn{
-  display:block;
-  margin-top:10px;
-  padding:12px;
-  background:#25D366;
-  color:#fff;
-  text-decoration:none;
-  border-radius:8px;
-  font-weight:bold;
+  display:block;margin-top:10px;padding:12px;
+  background:#25D366;color:#fff;text-decoration:none;
+  border-radius:8px;font-weight:bold
 }
 
 .video iframe{width:100%;height:220px;border-radius:10px}
 
 .social a{
-  display:inline-block;
-  margin:6px;
-  font-weight:bold;
-  text-decoration:none;
-  color:#0d6efd;
+  display:inline-block;margin:6px;font-weight:bold;
+  text-decoration:none;color:#0d6efd
 }
 
 .whatsapp{
   position:fixed;right:15px;bottom:15px;
-  background:#25D366;color:#fff;
-  padding:12px 18px;border-radius:30px;
-  text-decoration:none;font-weight:bold
+  background:#25D366;color:#fff;padding:12px 18px;
+  border-radius:30px;text-decoration:none;font-weight:bold
 }
 
 .note{
-  background:#fff3cd;
-  padding:10px;
-  border-radius:8px;
-  font-size:14px;
+  background:#fff3cd;padding:10px;border-radius:8px;font-size:14px
 }
-
 footer{background:#222;color:#fff;text-align:center;padding:12px;font-size:14px}
 </style>
 </head>
@@ -73,13 +67,17 @@ footer{background:#222;color:#fff;text-align:center;padding:12px;font-size:14px}
 
 <header>
 <h1>Pawan Baba Jan Sewa Kendra</h1>
-<p>CSC | Jan Seva | Online Government Services</p>
+<p>CSC | Jan Seva | Online Government Assistance</p>
+<div class="cta">
+  <a href="https://wa.me/917408313391" target="_blank">📲 WhatsApp Contact</a>
+  <a href="#services">🛠 View Services</a>
+</div>
 </header>
 
 <section>
 <h2>👤 Operator Details</h2>
 <div class="operator">
-<img src="https://i.ibb.co/5g0ng1T8/BABA.png">
+<img src="https://i.ibb.co/5g0ng1T8/BABA.png" alt="Pawan Baba">
 <div>
 <b>Pawan Baba</b><br>
 Jan Sewa Kendra Operator<br>
@@ -90,6 +88,16 @@ Jan Sewa Kendra Operator<br>
 </section>
 
 <section>
+<h2>✅ Why Choose Us</h2>
+<div class="trust">
+  <div>✔ Local Jan Sewa Kendra</div>
+  <div>✔ WhatsApp Support</div>
+  <div>✔ Secure UPI Payment</div>
+  <div>✔ Experienced Operator</div>
+</div>
+</section>
+
+<section id="services">
 <h2>🛠 Jan Sewa Kendra Services (Click to Order)</h2>
 
 <div class="grid">
@@ -103,11 +111,11 @@ PAN Card<br><span class="price">New / Correction</span>
 </a>
 
 <a class="card" href="https://wa.me/917408313391?text=SERVICE:%20Ayushman%20Card%0ACustomer%20Name:%0AMobile%20Number:%0AVillage/City:" target="_blank">
-Ayushman Card
+Ayushman Card<br><span class="price">Apply</span>
 </a>
 
 <a class="card" href="https://wa.me/917408313391?text=SERVICE:%20Ration%20Card%0ACustomer%20Name:%0AMobile%20Number:%0AVillage/City:" target="_blank">
-Ration Card
+Ration Card<br><span class="price">Apply / Update</span>
 </a>
 
 <a class="card" href="https://wa.me/917408313391?text=SERVICE:%20Income%20Certificate%0ACustomer%20Name:%0AMobile%20Number:%0AVillage/City:" target="_blank">
@@ -123,9 +131,13 @@ Residence Certificate
 </a>
 
 <a class="card" href="https://wa.me/917408313391?text=SERVICE:%20Online%20Form%20Filling%0ACustomer%20Name:%0AMobile%20Number:%0AVillage/City:" target="_blank">
-Online Form Filling
+Online Form Filling<br><span class="price">Jobs / Admission</span>
 </a>
 
+</div>
+
+<div class="note" style="margin-top:10px">
+📌 <b>Online Order:</b> Service par click → WhatsApp message auto open → details bheje → payment kare
 </div>
 </section>
 
@@ -141,25 +153,11 @@ Subscription lene ke liye WhatsApp kare
 
 <section class="pay">
 <h2>💳 Online Payment</h2>
-<img src="upi-qr.jpg">
+<img src="upi-qr.jpg" alt="UPI QR">
 <p><b>UPI ID:</b> gpay-11264623678@okbizaxis</p>
 
 <div class="note">
-📌 Payment ke baad WhatsApp par  
-<b>Name + Mobile + Screenshot</b> bhejna zaroori hai
-</div>
-</section>
-
-<section>
-<h2>🎓 Training & Digital Services</h2>
-<div class="grid">
-<a class="card" href="https://wa.me/917408313391?text=SERVICE:%20CSC%20CSP%20Training%0ACustomer%20Name:%0AMobile%20Number:" target="_blank">
-CSC / CSP Training
-</a>
-
-<a class="card" href="https://wa.me/917408313391?text=SERVICE:%20Resume%20PDF%20Service%0ACustomer%20Name:%0AMobile%20Number:" target="_blank">
-Resume / PDF Service
-</a>
+Payment ke baad WhatsApp par <b>Name + Mobile + Screenshot</b> bhejna zaroori hai
 </div>
 </section>
 
@@ -183,7 +181,8 @@ WhatsApp
 </a>
 
 <footer>
-© 2026 Pawan Baba Jan Sewa Kendra
+© 2026 Pawan Baba Jan Sewa Kendra<br>
+This website provides assistance services only. Final approval is done on official portals.
 </footer>
 
 </body>
