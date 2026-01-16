@@ -9,25 +9,47 @@
 body{
   margin:0;
   font-family:Arial, sans-serif;
-  background:#f2f6ff;
+  background:#f2f4f8;
 }
 header{
   background:#0d6efd;
   color:white;
-  padding:20px;
   text-align:center;
+  padding:25px 10px;
 }
 section{
   background:white;
-  margin:15px;
+  margin:12px;
   padding:15px;
   border-radius:10px;
 }
-h2{color:#0d6efd;}
-input,select,button{
+h2{
+  color:#0d6efd;
+}
+.operator{
+  text-align:center;
+}
+.operator img{
+  width:120px;
+  height:120px;
+  border-radius:50%;
+  border:3px solid #0d6efd;
+}
+.services{
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:10px;
+}
+.service{
+  border:1px solid #ddd;
+  padding:12px;
+  border-radius:8px;
+  text-align:center;
+}
+input, select, button{
   width:100%;
   padding:10px;
-  margin-bottom:10px;
+  margin-top:8px;
   border-radius:6px;
   border:1px solid #ccc;
 }
@@ -37,28 +59,18 @@ button{
   border:none;
   font-size:16px;
 }
-.services{
-  display:grid;
-  grid-template-columns:repeat(2,1fr);
-  gap:10px;
-}
-.service{
-  border:1px solid #ddd;
-  padding:10px;
-  text-align:center;
-  border-radius:8px;
-}
-.service img{
-  width:50px;
+.note{
+  font-size:13px;
+  color:gray;
 }
 .whatsapp{
   position:fixed;
   bottom:15px;
   right:15px;
-  background:#25d366;
+  background:#25D366;
   color:white;
   padding:12px 18px;
-  border-radius:50px;
+  border-radius:30px;
   text-decoration:none;
   font-weight:bold;
 }
@@ -69,74 +81,75 @@ footer{
   padding:10px;
   font-size:14px;
 }
-.note{font-size:13px;color:gray;}
 </style>
 </head>
 
 <body>
 
 <header>
-<h1>Pawan Baba Jan Sewa Kendra</h1>
-<p>All Government & Online Services</p>
+  <h1>Pawan Baba Jan Sewa Kendra</h1>
+  <p>All Government & Online Services</p>
 </header>
 
-<section>
-<h2>👤 Operator</h2>
-<img src="owner.jpg" style="width:120px;border-radius:10px"><br><br>
-<b>Pawan Baba</b><br>
-Jan Sewa Kendra Operator
+<section class="operator">
+  <h2>👤 Operator</h2>
+
+  <!-- 👇 YAHAN TUMHARA PHOTO DIRECT LINK -->
+  <img src="https://i.ibb.co/5g0ng1T8/your-photo.png">
+
+  <h3>Pawan Baba</h3>
+  <p>Jan Sewa Kendra Operator</p>
 </section>
 
 <section>
-<h2>🛠️ Hamari Services</h2>
-<div class="services">
-  <div class="service"><img src="https://cdn-icons-png.flaticon.com/512/3135/3135715.png"><p>Aadhaar Services</p></div>
-  <div class="service"><img src="https://cdn-icons-png.flaticon.com/512/2910/2910791.png"><p>PAN Card</p></div>
-  <div class="service"><img src="https://cdn-icons-png.flaticon.com/512/2966/2966485.png"><p>Ayushman Card</p></div>
-  <div class="service"><img src="https://cdn-icons-png.flaticon.com/512/942/942748.png"><p>Ration Card</p></div>
-</div>
+  <h2>🛠 Hamari Services</h2>
+  <div class="services">
+    <div class="service">Aadhaar Services</div>
+    <div class="service">PAN Card</div>
+    <div class="service">Ayushman Card</div>
+    <div class="service">Ration Card</div>
+    <div class="service">Income / Caste Certificate</div>
+    <div class="service">Online Forms</div>
+  </div>
 </section>
 
 <section>
-<h2>🔐 Customer Login (Demo)</h2>
-<input type="text" placeholder="Username">
-<input type="password" placeholder="Password">
-<button>Login</button>
-<p class="note">Demo login – real government login nahi</p>
+  <h2>📩 Online Order (WhatsApp)</h2>
+  <form action="https://wa.me/917408313391" method="get">
+    <input type="text" placeholder="Apna Naam Likhe" required>
+    <input type="tel" placeholder="10 digit mobile number" required>
+    <select>
+      <option>Aadhaar Service</option>
+      <option>PAN Card</option>
+      <option>Ayushman Card</option>
+      <option>Ration Card</option>
+      <option>Other</option>
+    </select>
+    <button type="submit">WhatsApp Par Bheje</button>
+  </form>
 </section>
 
 <section>
-<h2>📝 Online Order / Enquiry</h2>
-<form action="https://wa.me/917408313391" method="get">
-<input type="text" placeholder="Apna Naam">
-<input type="tel" placeholder="10 digit mobile number">
-<select>
-<option>Aadhaar Service</option>
-<option>PAN Card</option>
-<option>Ayushman Card</option>
-<option>Ration Card</option>
-<option>Other</option>
-</select>
-<button type="submit">WhatsApp Par Bheje</button>
-</form>
+  <h2>💳 Online Payment (UPI)</h2>
+  <p>QR scan karke payment karein</p>
+
+  <!-- 👇 QR IMAGE (GitHub me upload ki hui) -->
+  <img src="upi-qr.jpg" style="width:220px;border:1px solid #ccc;border-radius:10px">
+
+  <p><b>UPI ID:</b> gpay-11264623678@okbizaxis</p>
+  <p class="note">Payment ke baad WhatsApp par screenshot bheje</p>
 </section>
 
 <section>
-<h2>💳 Online Payment (UPI)</h2>
-<p>QR scan karke payment karein</p>
-<img src="upi-qr.jpg" style="width:230px;border:1px solid #ccc;border-radius:10px">
-<p><b>UPI ID:</b> gpay-11264623678@okbizaxis</p>
-<p class="note">Payment ke baad WhatsApp par screenshot bheje</p>
+  <h2>📞 Contact Details</h2>
+  <p>📱 Mobile: 7408313391</p>
+  <p>📍 Address: Gauri Bazar, Deoria (UP)</p>
+  <p>📧 Email: pawanbabapawan91@gmail.com</p>
 </section>
 
-<section>
-<h2>📞 Contact Details</h2>
-<p>📱 <b>Mobile:</b> 7408313391</p>
-<p>📍 <b>Address:</b> Gauri Bazar, Deoria (UP)</p>
-<p>📧 <b>Email:</b> pawanbabapawan91@gmail.com</p>
-</section>
-
-<a class="whatsapp" href="https://wa.me/917408313391" target="_blank">WhatsApp</a>
+<a class="whatsapp" href="https://wa.me/917408313391" target="_blank">
+WhatsApp
+</a>
 
 <footer>
 © 2026 Pawan Baba Jan Sewa Kendra
