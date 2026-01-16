@@ -6,63 +6,121 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 
 <style>
-body{margin:0;font-family:Arial;background:#f2f2f2;}
-header{background:#0d6efd;color:#fff;padding:20px;text-align:center;}
-section{background:#fff;margin:12px;padding:15px;border-radius:8px;}
-h2{color:#0d6efd;}
-.services{display:grid;grid-template-columns:1fr 1fr;gap:10px;}
-.service{border:1px solid #ddd;border-radius:6px;padding:10px;text-align:center;}
-.service img{width:60px;height:60px;}
-input,select,textarea,button{
-  width:100%;padding:10px;margin-bottom:10px;
-  border-radius:5px;border:1px solid #ccc;
+body{
+  margin:0;
+  font-family:Arial, sans-serif;
+  background:#f2f2f2;
 }
-button{background:#0d6efd;color:#fff;border:none;font-size:16px;}
-footer{background:#222;color:#fff;text-align:center;padding:10px;}
+header{
+  background:#0d6efd;
+  color:#fff;
+  padding:20px;
+  text-align:center;
+}
+section{
+  background:#fff;
+  margin:12px;
+  padding:15px;
+  border-radius:10px;
+}
+h2{color:#0d6efd}
+
+.services{
+  display:grid;
+  grid-template-columns:repeat(auto-fill,minmax(120px,1fr));
+  gap:10px;
+}
+.service{
+  border:1px solid #ddd;
+  border-radius:8px;
+  padding:10px;
+  text-align:center;
+}
+.service img{
+  width:50px;
+  height:50px;
+}
+
+input,select,button{
+  width:100%;
+  padding:10px;
+  margin-bottom:10px;
+  border-radius:5px;
+  border:1px solid #ccc;
+}
+button{
+  background:#0d6efd;
+  color:white;
+  border:none;
+  font-size:16px;
+}
+.note{
+  font-size:13px;
+  color:gray;
+}
+
+footer{
+  background:#222;
+  color:white;
+  text-align:center;
+  padding:10px;
+}
+
 .whatsapp{
- position:fixed;bottom:15px;right:15px;
- background:#25D366;color:#fff;
- padding:12px 16px;border-radius:50px;
- text-decoration:none;font-weight:bold;
+  position:fixed;
+  bottom:15px;
+  right:15px;
+  background:#25D366;
+  color:white;
+  padding:12px 18px;
+  border-radius:50px;
+  text-decoration:none;
+  font-weight:bold;
 }
-.note{font-size:13px;color:gray;}
 </style>
 </head>
 
 <body>
 
 <header>
-<h1>Pawan Baba Jan Sewa Kendra</h1>
-<p>All Government, Banking & Online Services</p>
+  <h1>Pawan Baba Jan Sewa Kendra</h1>
+  <p>All Government, Banking & Online Services</p>
 </header>
 
 <section>
 <h2>Hamari Services</h2>
 <div class="services">
-  <div class="service">
-    <img src="https://cdn-icons-png.flaticon.com/512/3135/3135715.png">
-    <p>Aadhaar Services</p>
-  </div>
-  <div class="service">
-    <img src="https://cdn-icons-png.flaticon.com/512/2910/2910791.png">
-    <p>Pan Card</p>
-  </div>
-  <div class="service">
-    <img src="https://cdn-icons-png.flaticon.com/512/2966/2966485.png">
-    <p>Ayushman Card</p>
-  </div>
-  <div class="service">
-    <img src="https://cdn-icons-png.flaticon.com/512/942/942748.png">
-    <p>Ration Card</p>
-  </div>
-  <div class="service">
-    <img src="https://cdn-icons-png.flaticon.com/512/942/942751.png">
-    <p>Income / Caste Certificate</p>
-  </div>
-  <div class="service">
-    <img src="https://cdn-icons-png.flaticon.com/512/942/942799.png">
-    <p>Online Forms</p>
-  </div>
+
+<div class="service">
+<img src="https://cdn-icons-png.flaticon.com/512/3135/3135715.png">
+<p>Aadhar Services</p>
+</div>
+
+<div class="service">
+<img src="https://cdn-icons-png.flaticon.com/512/2910/2910791.png">
+<p>PAN Card</p>
+</div>
+
+<div class="service">
+<img src="https://cdn-icons-png.flaticon.com/512/2966/2966485.png">
+<p>Ayushman Card</p>
+</div>
+
+<div class="service">
+<img src="https://cdn-icons-png.flaticon.com/512/942/942748.png">
+<p>Ration Card</p>
+</div>
+
+<div class="service">
+<img src="https://cdn-icons-png.flaticon.com/512/942/942751.png">
+<p>Income / Caste</p>
+</div>
+
+<div class="service">
+<img src="https://cdn-icons-png.flaticon.com/512/942/942799.png">
+<p>Online Forms</p>
+</div>
+
 </div>
 </section>
 
@@ -75,57 +133,46 @@ footer{background:#222;color:#fff;text-align:center;padding:10px;}
 </section>
 
 <section>
-<h2>Online Order / Enquiry</h2>
-
-<form action="https://wa.me/918408313391" method="get">
-<input type="text" name="text" placeholder="Apna Naam likhiye" required>
-<input type="tel" placeholder="Mobile Number" required>
-
+<h2>Online Enquiry (WhatsApp)</h2>
+<form action="https://wa.me/917408313391" method="get">
+<input type="text" placeholder="Apna Naam Likhe">
+<input type="tel" placeholder="10 digit mobile number">
 <select>
-<option>Select Service</option>
-<option>Aadhaar Service</option>
-<option>Pan Card</option>
+<option>Aadhar Service</option>
+<option>PAN Card</option>
 <option>Ayushman Card</option>
 <option>Ration Card</option>
-<option>Income / Caste Certificate</option>
+<option>Income / Caste</option>
 <option>Other</option>
 </select>
-
-<textarea placeholder="Message / Detail likhiye"></textarea>
-
-<p class="note">📸 Document photo WhatsApp par send karein</p>
-
-<button type="submit">WhatsApp Par Order Bheje</button>
+<button type="submit">WhatsApp Par Bheje</button>
 </form>
 </section>
 
 <section>
-<h2>Payment (Optional)</h2>
-<p>UPI / QR Scan</p>
-<img src="https://via.placeholder.com/200" alt="QR Code">
-<p class="note">QR image baad me replace kar sakte ho</p>
+<h2>Online Payment (UPI)</h2>
+<p>QR scan karke payment karein</p>
+
+<img src="upi-qr.jpg" style="width:230px;border:1px solid #ccc;padding:10px;border-radius:10px">
+
+<p><b>UPI ID:</b> gpay-11264623678@okbizaxis</p>
+<p class="note">Payment ke baad WhatsApp par screenshot bheje</p>
 </section>
 
 <section>
-<h2>Location</h2>
-<iframe
-src="https://maps.google.com/maps?q=Gauri%20Bazar%20Deoria&t=&z=13&ie=UTF8&iwloc=&output=embed"
-width="100%" height="200" style="border:0;">
-</iframe>
+<h2>Contact Details</h2>
+<p>📞 <b>Mobile:</b> 7408313391</p>
+<p>📍 <b>Address:</b> Gauri Bazar, Deoria (UP)</p>
+<p>📧 <b>Email:</b> pawanbabapawan91@gmail.com</p>
 </section>
 
-<section>
-<h2>Contact</h2>
-<p>📞 Mobile: 7408313391</p>
-<p>📧 Email: pawanbabapawan91@gmail.com</p>
-<p>📍 Address: Gauri Bazar, Deoria (UP)</p>
-</section>
+<a class="whatsapp" href="https://wa.me/917408313391" target="_blank">
+WhatsApp
+</a>
 
 <footer>
 © 2026 Pawan Baba Jan Sewa Kendra
 </footer>
-
-<a class="whatsapp" href="https://wa.me/918408313391">WhatsApp</a>
 
 </body>
 </html>
