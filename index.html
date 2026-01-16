@@ -18,6 +18,7 @@ h2{color:#0d6efd;margin-top:0}
 input,select,button{width:100%;padding:12px;margin-bottom:10px;border-radius:8px;border:1px solid #ccc}
 button{background:#0d6efd;color:#fff;border:none;font-size:16px}
 .note{font-size:13px;color:gray}
+#subMsg{display:none;color:green;font-weight:bold;margin-top:10px}
 .social a{display:block;margin:6px 0;color:#0d6efd;font-weight:bold;text-decoration:none}
 .whatsapp{position:fixed;right:15px;bottom:15px;background:#25D366;color:#fff;padding:12px 18px;border-radius:30px;text-decoration:none;font-weight:bold}
 footer{background:#222;color:#fff;text-align:center;padding:12px;font-size:14px}
@@ -35,7 +36,7 @@ ul{padding-left:18px}
 <section>
 <h2>👤 Operator</h2>
 <div class="operator">
-<img src="https://i.ibb.co/5g0ng1T8/BABA-DIGITAL-HUB.png" alt="Pawan Baba">
+<img src="https://i.ibb.co/5g0ng1T8/BABA-DIGITAL-HUB.png">
 <div>
 <b>Pawan Baba</b><br>
 Jan Sewa Kendra Operator
@@ -56,15 +57,19 @@ Jan Sewa Kendra Operator
 </section>
 
 <section>
-<h2>📦 Subscription Plans</h2>
+<h2>📦 Subscription Plan</h2>
 <div class="services">
-<div class="service" onclick="subscribePlan('Starter Plan - ₹45/month')">
+<div class="service" onclick="subscribe45()">
 <b>Starter Plan</b><br>
 ₹45 / Month<br>
 Aadhaar, PAN, Online Forms
 </div>
 </div>
-<p class="note">Payment ke baad WhatsApp par screenshot bheje</p>
+
+<p id="subMsg">
+✅ Subscription request received.<br>
+Please complete payment and send screenshot on WhatsApp.
+</p>
 </section>
 
 <section>
@@ -141,9 +146,14 @@ allowfullscreen></iframe>
 function sendService(service){
   window.open("https://wa.me/917408313391?text=Service Required: "+service);
 }
-function subscribePlan(plan){
-  window.open("https://wa.me/917408313391?text=Subscription Required: "+plan);
+
+function subscribe45(){
+  document.getElementById("subMsg").style.display="block";
+  window.open(
+    "https://wa.me/917408313391?text=Subscription%20Request:%20Starter%20Plan%20₹45/month"
+  );
 }
+
 function sendWhatsApp(){
   let n=document.getElementById('name').value;
   let m=document.getElementById('mobile').value;
