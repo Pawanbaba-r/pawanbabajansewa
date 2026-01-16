@@ -9,46 +9,50 @@
 body{
   margin:0;
   font-family:Arial, sans-serif;
-  background:#f4f6f8;
+  background:#f2f2f2;
 }
 header{
   background:#0d6efd;
-  color:white;
-  padding:25px;
+  color:#fff;
+  padding:20px;
   text-align:center;
 }
 section{
-  background:white;
-  margin:15px;
+  background:#fff;
+  margin:12px;
   padding:15px;
   border-radius:8px;
 }
-h2{
-  color:#0d6efd;
+h2{color:#0d6efd;}
+.service{
+  display:flex;
+  align-items:center;
+  margin-bottom:10px;
 }
-input, select, button{
+.service img{
+  width:60px;
+  height:60px;
+  margin-right:10px;
+  border-radius:6px;
+}
+input, select, textarea, button{
   width:100%;
   padding:10px;
-  margin-top:5px;
-  margin-bottom:12px;
-  border:1px solid #ccc;
+  margin-bottom:10px;
   border-radius:5px;
+  border:1px solid #ccc;
 }
 button{
   background:#0d6efd;
-  color:white;
+  color:#fff;
   border:none;
   font-size:16px;
 }
-button:hover{
-  background:#084298;
-}
 footer{
   background:#222;
-  color:white;
+  color:#fff;
   text-align:center;
   padding:10px;
-  font-size:14px;
 }
 .whatsapp{
   position:fixed;
@@ -56,7 +60,7 @@ footer{
   right:15px;
   background:#25D366;
   color:white;
-  padding:12px 15px;
+  padding:12px 16px;
   border-radius:50px;
   text-decoration:none;
   font-weight:bold;
@@ -67,67 +71,75 @@ footer{
 <body>
 
 <header>
-  <h1>Pawan Baba Jan Sewa Kendra</h1>
-  <p>All Government, Banking & Online Services</p>
+<h1>Pawan Baba Jan Sewa Kendra</h1>
+<p>All Government & Online Services</p>
 </header>
 
 <section>
-  <h2>Hamari Services</h2>
-  <ul>
-    <li>Aadhar Card Services</li>
-    <li>Pan Card Apply / Correction</li>
-    <li>Ayushman Bharat Card</li>
-    <li>Ration Card / E-KYC</li>
-    <li>Income / Caste / Domicile Certificate</li>
-    <li>Birth / Death Certificate</li>
-    <li>Online Forms & Exam Forms</li>
-  </ul>
+<h2>Hamari Services</h2>
+
+<div class="service">
+<img src="https://via.placeholder.com/60" alt="">
+<b>Aadhaar Services</b>
+</div>
+
+<div class="service">
+<img src="https://via.placeholder.com/60" alt="">
+<b>Pan Card</b>
+</div>
+
+<div class="service">
+<img src="https://via.placeholder.com/60" alt="">
+<b>Ayushman Card</b>
+</div>
+
+<div class="service">
+<img src="https://via.placeholder.com/60" alt="">
+<b>Ration Card</b>
+</div>
+
+<div class="service">
+<img src="https://via.placeholder.com/60" alt="">
+<b>Income / Caste Certificate</b>
+</div>
 </section>
 
 <section>
-  <h2>Customer Login (Demo)</h2>
-  <input type="text" placeholder="Username">
-  <input type="password" placeholder="Password">
-  <button>Login</button>
-  <p style="font-size:13px;color:gray;">*Demo login – real data save nahi hota</p>
+<h2>Online Order / Enquiry</h2>
+
+<form action="https://wa.me/918408313391" method="get">
+<input type="text" name="text" placeholder="Apna Naam likhiye" required>
+<input type="tel" placeholder="Mobile Number" required>
+
+<select>
+<option>Select Service</option>
+<option>Aadhaar Service</option>
+<option>Pan Card</option>
+<option>Ayushman Card</option>
+<option>Ration Card</option>
+<option>Income / Caste Certificate</option>
+</select>
+
+<textarea placeholder="Message / Detail likhiye"></textarea>
+
+<p><b>📸 Document Photo:</b><br>
+Form submit ke baad WhatsApp me photo send karein</p>
+
+<button type="submit">WhatsApp Par Order Bheje</button>
+</form>
 </section>
 
 <section>
-  <h2>Online Enquiry (WhatsApp)</h2>
-
-  <form action="https://wa.me/917408313391" method="get">
-    <label>Naam</label>
-    <input type="text" placeholder="Apna Naam Likhe">
-
-    <label>Mobile Number</label>
-    <input type="tel" placeholder="10 digit mobile number">
-
-    <label>Service</label>
-    <select>
-      <option>Aadhar Service</option>
-      <option>Pan Card</option>
-      <option>Ayushman Card</option>
-      <option>Ration Card</option>
-      <option>Income / Caste Certificate</option>
-      <option>Other</option>
-    </select>
-
-    <button type="submit">WhatsApp Par Bheje</button>
-  </form>
+<h2>Contact Details</h2>
+<p>📞 Mobile: 8408313391</p>
+<p>📍 Address: Gauri Bazar, Deoria (UP)</p>
 </section>
-
-<section>
-  <h2>Contact Details</h2>
-  <p>📞 Mobile: <b>7408313391</b></p>
-  <p>📍 Address: Gauri Bazar, Deoria (UP)</p>
-  <p>📧 Email: pawanbabapawan91@gmail.com</p>
-</section>
-
-<a class="whatsapp" href="https://wa.me/917408313391">WhatsApp</a>
 
 <footer>
-  © 2026 Pawan Baba Jan Sewa Kendra
+© 2026 Pawan Baba Jan Sewa Kendra
 </footer>
+
+<a class="whatsapp" href="https://wa.me/918408313391">WhatsApp</a>
 
 </body>
 </html>
