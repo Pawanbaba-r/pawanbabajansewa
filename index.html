@@ -3,65 +3,127 @@
 <head>
 <meta charset="UTF-8">
 <title>Pawan Baba Jan Sewa Kendra</title>
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
 <style>
 body{
   margin:0;
-  font-family: Arial, sans-serif;
-  background:#f5f5f5;
+  font-family:Arial, sans-serif;
+  background:#f4f6f8;
 }
 header{
   background:#0d6efd;
   color:white;
-  padding:20px;
+  padding:25px;
   text-align:center;
 }
 section{
-  padding:15px;
-  margin:10px;
   background:white;
-  border-radius:6px;
+  margin:15px;
+  padding:15px;
+  border-radius:8px;
 }
 h2{
   color:#0d6efd;
 }
+input, select, button{
+  width:100%;
+  padding:10px;
+  margin-top:5px;
+  margin-bottom:12px;
+  border:1px solid #ccc;
+  border-radius:5px;
+}
+button{
+  background:#0d6efd;
+  color:white;
+  border:none;
+  font-size:16px;
+}
+button:hover{
+  background:#084298;
+}
 footer{
   background:#222;
-  color:#fff;
+  color:white;
   text-align:center;
   padding:10px;
   font-size:14px;
 }
+.whatsapp{
+  position:fixed;
+  bottom:15px;
+  right:15px;
+  background:#25D366;
+  color:white;
+  padding:12px 15px;
+  border-radius:50px;
+  text-decoration:none;
+  font-weight:bold;
+}
 </style>
 </head>
-
-Look carefully, this is correct; continue code below
 
 <body>
 
 <header>
   <h1>Pawan Baba Jan Sewa Kendra</h1>
-  <p>All Government & Online Services</p>
+  <p>All Government, Banking & Online Services</p>
 </header>
 
 <section>
   <h2>Hamari Services</h2>
   <ul>
-    <li>Aadhar Services</li>
-    <li>Ration Card</li>
-    <li>Ayushman Card</li>
+    <li>Aadhar Card Services</li>
+    <li>Pan Card Apply / Correction</li>
+    <li>Ayushman Bharat Card</li>
+    <li>Ration Card / E-KYC</li>
+    <li>Income / Caste / Domicile Certificate</li>
     <li>Birth / Death Certificate</li>
-    <li>Income / Caste Certificate</li>
-    <li>Pan Card</li>
-    <li>Online Forms</li>
+    <li>Online Forms & Exam Forms</li>
   </ul>
 </section>
 
 <section>
-  <h2>Contact</h2>
-  <p>📞 Mobile: 9XXXXXXXXX</p>
-  <p>📍 Address: Gauri Bazar, Deoria (UP)</p>
+  <h2>Customer Login (Demo)</h2>
+  <input type="text" placeholder="Username">
+  <input type="password" placeholder="Password">
+  <button>Login</button>
+  <p style="font-size:13px;color:gray;">*Demo login – real data save nahi hota</p>
 </section>
+
+<section>
+  <h2>Online Enquiry (WhatsApp)</h2>
+
+  <form action="https://wa.me/917408313391" method="get">
+    <label>Naam</label>
+    <input type="text" placeholder="Apna Naam Likhe">
+
+    <label>Mobile Number</label>
+    <input type="tel" placeholder="10 digit mobile number">
+
+    <label>Service</label>
+    <select>
+      <option>Aadhar Service</option>
+      <option>Pan Card</option>
+      <option>Ayushman Card</option>
+      <option>Ration Card</option>
+      <option>Income / Caste Certificate</option>
+      <option>Other</option>
+    </select>
+
+    <button type="submit">WhatsApp Par Bheje</button>
+  </form>
+</section>
+
+<section>
+  <h2>Contact Details</h2>
+  <p>📞 Mobile: <b>7408313391</b></p>
+  <p>📍 Address: Gauri Bazar, Deoria (UP)</p>
+  <p>📧 Email: pawanbabapawan91@gmail.com</p>
+</section>
+
+<a class="whatsapp" href="https://wa.me/917408313391">WhatsApp</a>
 
 <footer>
   © 2026 Pawan Baba Jan Sewa Kendra
