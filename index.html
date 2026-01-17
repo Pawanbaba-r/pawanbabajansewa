@@ -9,7 +9,7 @@
 body{
   margin:0;
   font-family:Arial, sans-serif;
-  background:linear-gradient(135deg,#0d47a1,#b71c1c);
+  background:linear-gradient(135deg,#0d47a1,#ff9800);
 }
 .container{
   max-width:1100px;
@@ -19,35 +19,31 @@ body{
 .header{
   background:#e3f2fd;
   border-radius:14px;
-  padding:20px;
+  padding:25px;
   text-align:center;
   margin-bottom:20px;
-}
-.header img{
-  width:130px;
-  height:130px;
-  border-radius:50%;
-  border:4px solid #b71c1c;
-  object-fit:cover;
+  border-bottom:5px solid #ff9800;
 }
 .header h1{
-  margin:10px 0 5px;
+  margin:0;
   color:#0d47a1;
+  font-size:28px;
 }
 .header p{
-  margin:0;
+  margin:8px 0 0;
   color:#333;
+  font-weight:bold;
 }
 
-/* BLUE BOX */
+/* SERVICE BOX */
 .card{
-  background:#e3f2fd;
+  background:#0d47a1;
   border-radius:14px;
   padding:16px;
   margin-bottom:20px;
 }
 .card h2{
-  color:#b71c1c;
+  color:#ffeb3b;
   margin-top:0;
   text-align:center;
 }
@@ -68,19 +64,20 @@ body{
   display:block;
   margin-top:5px;
   font-size:13px;
-  color:#0d47a1;
+  color:#ff9800;
 }
 
 .payment img{
   width:220px;
   display:block;
   margin:10px auto;
+  border-radius:10px;
 }
 
 .note{
   font-size:13px;
   text-align:center;
-  color:#333;
+  color:#fff;
 }
 
 .footer{
@@ -97,8 +94,6 @@ body{
 
 <!-- HEADER -->
 <div class="header">
-  <!-- PHOTO -->
-  <img src="profile.jpg" alt="Baba Digital Hub">
   <h1>Baba Digital Hub</h1>
   <p>CSC | Jan Seva | Online Government Services</p>
 </div>
@@ -107,28 +102,32 @@ body{
 <div class="card">
   <h2>CSC / Government Services</h2>
   <div class="services">
-    <div class="service">Aadhaar Apply / Update <span class="rate">₹ hai 150</span></div>
+    <div class="service">Aadhaar Apply / Update <span class="rate">₹150</span></div>
     <div class="service">PAN Card (New / Correction) <span class="rate">₹170</span></div>
     <div class="service">Ayushman Bharat Card <span class="rate">₹80</span></div>
     <div class="service">Ration Card <span class="rate">₹200</span></div>
-    <div class="service">Income Certificate <span class="rate">₹ 80</span></div>
+    <div class="service">Income Certificate <span class="rate">₹80</span></div>
     <div class="service">Caste Certificate <span class="rate">₹80</span></div>
     <div class="service">Domicile Certificate <span class="rate">₹80</span></div>
-    <div class="service">PM Jan Dhan Account <span class="rate">₹ 150</span></div>
+    <div class="service">PM Jan Dhan Account <span class="rate">₹150</span></div>
     <div class="service">Insurance Services <span class="rate">₹476</span></div>
     <div class="service">AEPS Services <span class="rate">₹0</span></div>
     <div class="service">Online Job / Exam Forms <span class="rate">₹100</span></div>
     <div class="service">School / College Admission <span class="rate">₹100</span></div>
   </div>
 
-  <p class="note">✔ Assistance services only. Final approval official portals par hota hai.</p>
+  <p class="note">
+    ✔ Assistance services only. Final approval official portals par hota hai.
+  </p>
 </div>
 
 <!-- PAYMENT -->
 <div class="card payment">
   <h2>Online Payment (UPI)</h2>
   <img src="upi-qr.jpg" alt="UPI QR">
-  <p style="text-align:center;"><b>UPI ID:</b> gpay-11264623678@okbizaxis</p>
+  <p style="text-align:center;color:#fff;">
+    <b>UPI ID:</b> gpay-11264623678@okbizaxis
+  </p>
 </div>
 
 </div>
