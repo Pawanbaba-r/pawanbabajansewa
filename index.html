@@ -17,16 +17,27 @@ body{
   padding:10px;
 }
 .header{
-  background:#fff;
+  background:#ffffff;
   border-radius:12px;
-  padding:12px;
+  padding:15px;
   text-align:center;
   margin-bottom:12px;
 }
-.header h1{margin:4px 0;color:#0d47a1}
-.header p{margin:2px 0;font-size:14px}
-.address{color:#ff6f00;font-weight:bold;font-size:13px}
-
+.header h1{
+  margin:5px 0;
+  color:#0d47a1;
+}
+.header p{
+  margin:0;
+  font-size:14px;
+  color:#444;
+}
+.address{
+  margin-top:6px;
+  font-size:13px;
+  color:#b71c1c;
+  font-weight:bold;
+}
 .notice{
   background:#ff9800;
   color:#fff;
@@ -36,250 +47,163 @@ body{
   font-weight:bold;
   margin-bottom:12px;
 }
-
 .card{
   background:#0d47a1;
-  border-radius:12px;
-  padding:10px;
-  margin-bottom:12px;
   color:#fff;
+  border-radius:12px;
+  padding:12px;
+  margin-bottom:12px;
 }
 .card h2{
-  margin:6px 0 10px;
+  margin:6px 0 12px;
   text-align:center;
   color:#ffeb3b;
   font-size:18px;
 }
-
 .services{
   display:grid;
   grid-template-columns:repeat(2,1fr);
   gap:8px;
 }
 .service{
-  background:#fff;
+  background:#ffffff;
   color:#000;
-  padding:8px 6px;
+  padding:8px;
   border-radius:8px;
   text-align:center;
   font-size:13px;
-  font-weight:600;
-  cursor:pointer;
+  font-weight:bold;
 }
-.service:hover{background:#ffe0b2}
 .rate{
   display:block;
-  margin-top:3px;
+  color:#ff5722;
   font-size:12px;
-  color:#ff9800;
+  margin-top:3px;
 }
-
-/* INSTAGRAM HIGHLIGHT */
-.insta-card{
-  background:linear-gradient(135deg,#e1306c,#fd1d1d,#f77737);
-  border-radius:12px;
-  padding:12px;
-  margin-bottom:12px;
-  color:#fff;
-}
-.insta-card h2{
+.note{
+  font-size:12px;
   text-align:center;
-  margin:0 0 10px;
+  margin-top:10px;
 }
-.insta{
-  background:#fff;
-  color:#000;
-  padding:8px;
-  border-radius:8px;
-  text-align:center;
-  font-size:13px;
-  font-weight:bold;
-  margin-bottom:6px;
-}
-
 .payment img{
-  width:180px;
+  width:200px;
   display:block;
-  margin:8px auto;
+  margin:10px auto;
 }
-
-.video iframe{
-  width:100%;
-  height:200px;
-  border-radius:10px;
-  border:none;
-}
-
 .social a{
   display:block;
-  background:#fff;
-  color:#0d47a1;
+  background:#ffffff;
+  color:#000;
   text-decoration:none;
   padding:8px;
-  margin:6px 0;
   border-radius:8px;
-  font-weight:bold;
+  margin:6px 0;
   text-align:center;
+  font-weight:bold;
 }
-
-.feedback input,.feedback textarea{
+.feedback textarea{
   width:100%;
-  padding:8px;
-  margin-bottom:6px;
+  height:60px;
   border-radius:6px;
   border:none;
+  padding:6px;
 }
 .feedback button{
   width:100%;
-  padding:10px;
-  background:#ff9800;
-  color:#000;
+  margin-top:6px;
+  padding:8px;
   border:none;
   border-radius:8px;
+  background:#ff9800;
+  color:#fff;
   font-weight:bold;
 }
-
-.help{
-  position:fixed;
-  right:14px;
-  bottom:14px;
-  background:#25D366;
-  color:#fff;
-  padding:12px;
-  border-radius:50%;
-  text-decoration:none;
-  font-size:18px;
-}
-
 .footer{
   text-align:center;
-  color:#fff;
   font-size:13px;
+  color:#fff;
   padding:10px;
 }
 </style>
 </head>
 
 <body>
-
 <div class="container">
 
+<!-- HEADER -->
 <div class="header">
   <h1>Baba Digital Hub</h1>
   <p>CSC | Jan Seva | Online Government Services</p>
   <div class="address">
-    📍 Union Bank ke bagal me, Gauri Bazar, Deoria, Uttar Pradesh
+    Union Bank ke bagal me, Gauri Bazar, Deoria, Uttar Pradesh
   </div>
 </div>
 
+<!-- FINO NOTICE -->
 <div class="notice">
-📞 FINO Payment Bank Retailer ID lene ke liye sampark kare  
-<br>📲 7408313391
+📞 FINO Payment Bank Retailer ID lene ke liye sampark kare – <b>7408313391</b>
 </div>
 
-<!-- INSTAGRAM HIGHLIGHT -->
-<div class="insta-card">
-  <h2>🔥 Instagram Services (Highlight)</h2>
-
-  <div class="insta">
-    Instagram Followers <br>
-    <b>100 Followers – ₹20</b>
-  </div>
-
-  <div class="insta">
-    Instagram Reel Views <br>
-    <b>100K Views – ₹100</b>
-  </div>
-
-  <div class="insta">
-    Instagram Likes <br>
-    <b>1K Likes – ₹80</b>
-  </div>
-
-  <div style="text-align:center;font-weight:bold;">
-    ✔ Instagram se related sab kaam yahan hota hai
-  </div>
-</div>
-
+<!-- CSC SERVICES -->
 <div class="card">
-<h2>CSC / Government Services (Click kare)</h2>
-
+<h2>CSC / Government Services</h2>
 <div class="services">
-  <div class="service" onclick="order('Aadhaar Apply / Update')">
-    Aadhaar Apply / Update <span class="rate">₹150</span>
-  </div>
-  <div class="service" onclick="order('PAN Card')">
-    PAN Card <span class="rate">₹170</span>
-  </div>
-  <div class="service" onclick="order('Ayushman Card')">
-    Ayushman Card <span class="rate">₹80</span>
-  </div>
-  <div class="service" onclick="order('Ration Card')">
-    Ration Card <span class="rate">₹200</span>
-  </div>
-  <div class="service" onclick="order('Income Certificate')">
-    Income Certificate <span class="rate">₹80</span>
-  </div>
-  <div class="service" onclick="order('Caste Certificate')">
-    Caste Certificate <span class="rate">₹80</span>
-  </div>
-  <div class="service" onclick="order('Domicile Certificate')">
-    Domicile Certificate <span class="rate">₹80</span>
-  </div>
-  <div class="service" onclick="order('PM Jan Dhan Account')">
-    PM Jan Dhan <span class="rate">₹150</span>
-  </div>
+  <div class="service">Aadhaar Apply / Update<span class="rate">₹150</span></div>
+  <div class="service">PAN Card (New / Correction)<span class="rate">₹170</span></div>
+  <div class="service">Ayushman Bharat Card<span class="rate">₹80</span></div>
+  <div class="service">Ration Card<span class="rate">₹200</span></div>
+  <div class="service">Income Certificate<span class="rate">₹80</span></div>
+  <div class="service">Caste Certificate<span class="rate">₹80</span></div>
+  <div class="service">Domicile Certificate<span class="rate">₹80</span></div>
+  <div class="service">PM Jan Dhan Account<span class="rate">₹150</span></div>
+  <div class="service">Insurance Services<span class="rate">₹476</span></div>
+  <div class="service">AEPS Services<span class="rate">₹0</span></div>
+  <div class="service">Online Job / Exam Forms<span class="rate">₹100</span></div>
+  <div class="service">School / College Admission<span class="rate">₹100</span></div>
+</div>
+<p class="note">✔ Assistance services only. Final approval official portals par hota hai.</p>
 </div>
 
+<!-- INSTAGRAM SERVICES -->
+<div class="card">
+<h2>Instagram Services</h2>
+<div class="services">
+  <div class="service">100 Followers<span class="rate">₹20</span></div>
+  <div class="service">1K Likes<span class="rate">₹80</span></div>
+  <div class="service">100K Reel Views<span class="rate">₹100</span></div>
+</div>
 </div>
 
+<!-- PAYMENT -->
 <div class="card payment">
 <h2>Online Payment (UPI)</h2>
 <img src="upi-qr.jpg" alt="UPI QR">
-<p style="text-align:center;"><b>UPI ID:</b> gpay-11264623678@okbizaxis</p>
+<p style="text-align:center;font-size:13px;">
+<b>UPI ID:</b> gpay-11264623678@okbizaxis
+</p>
 </div>
 
-<div class="card video">
-<h2>Demo Video</h2>
-<iframe src="https://www.youtube.com/embed/JjEzapwtH7Y" allowfullscreen></iframe>
+<!-- SOCIAL -->
+<div class="card social">
+<h2>Connect With Us</h2>
+<a href="https://www.instagram.com/baba_digital_hub" target="_blank">📸 Instagram</a>
+<a href="https://www.facebook.com/share/1ADEMGCsip/" target="_blank">📘 Facebook</a>
+<a href="https://whatsapp.com/channel/0029Vb7JYjrDp2Q02NiWcM28" target="_blank">💬 WhatsApp Channel</a>
+<a href="https://youtube.com/@baba_digital_hub" target="_blank">▶️ YouTube</a>
 </div>
 
-<div class="card">
-<h2>Follow / Connect</h2>
-<div class="social">
-  <a href="https://whatsapp.com/channel/0029Vb7JYjrDp2Q02NiWcM28" target="_blank">WhatsApp Channel</a>
-  <a href="https://youtube.com/@baba_digital_hub" target="_blank">YouTube</a>
-  <a href="https://www.instagram.com/baba_digital_hub" target="_blank">Instagram</a>
-  <a href="https://www.facebook.com/share/1ADEMGCsip/" target="_blank">Facebook</a>
-</div>
-</div>
-
+<!-- FEEDBACK -->
 <div class="card feedback">
-<h2>Feedback</h2>
-<input type="text" placeholder="Aapka Naam">
-<textarea rows="3" placeholder="Apna feedback likhe"></textarea>
-<button onclick="alert('Dhanyavaad! Aapka feedback mil gaya.')">
-Submit Feedback
-</button>
+<h2>Customer Feedback</h2>
+<textarea placeholder="Apna feedback yaha likhe..."></textarea>
+<button>Submit Feedback</button>
 </div>
 
 </div>
-
-<a class="help" href="https://wa.me/917408313391" target="_blank">💬</a>
 
 <div class="footer">
 © 2026 Baba Digital Hub
 </div>
-
-<script>
-function order(service){
-  var msg = "Service: " + service +
-            "%0AName:%20" +
-            "%0AMobile:%20" +
-            "%0AAddress:%20Gauri%20Bazar";
-  window.open("https://wa.me/917408313391?text=" + msg, "_blank");
-}
-</script>
 
 </body>
 </html>
