@@ -13,161 +13,175 @@ body{
 }
 .container{max-width:1000px;margin:auto;padding:10px;}
 .header{
-  background:#fff;border-radius:12px;padding:15px;text-align:center;margin-bottom:12px;
+  background:#fff;border-radius:12px;padding:15px;
+  text-align:center;margin-bottom:12px;
 }
 .header h1{margin:5px 0;color:#0d47a1;}
-.header p{margin:0;font-size:14px;color:#444;}
-.address{margin-top:6px;font-size:13px;color:#b71c1c;font-weight:bold;}
+.header p{margin:0;font-size:14px;}
+.address{font-size:13px;color:#b71c1c;font-weight:bold;margin-top:5px;}
 
 .notice{
-  background:#ff9800;color:#fff;padding:10px;border-radius:10px;
-  text-align:center;font-weight:bold;margin-bottom:12px;
+  background:#ff9800;color:#fff;padding:10px;
+  border-radius:10px;text-align:center;
+  font-weight:bold;margin-bottom:12px;
 }
 
 .card{
-  background:#0d47a1;color:#fff;border-radius:12px;
-  padding:12px;margin-bottom:12px;
+  background:#0d47a1;color:#fff;
+  border-radius:12px;padding:12px;margin-bottom:12px;
 }
 .card h2{
-  margin:6px 0 12px;text-align:center;
-  color:#ffeb3b;font-size:18px;
+  text-align:center;color:#ffeb3b;
+  margin:6px 0 10px;font-size:18px;
 }
 
 .services{
   display:grid;grid-template-columns:repeat(2,1fr);gap:8px;
 }
 .service{
-  background:#fff;color:#000;padding:8px;border-radius:8px;
-  text-align:center;font-size:13px;font-weight:bold;
+  background:#fff;color:#000;padding:8px;
+  border-radius:8px;text-align:center;
+  font-size:13px;font-weight:bold;
 }
-.service a{
-  text-decoration:none;color:#000;display:block;
-}
+.service a{color:#000;text-decoration:none;display:block;}
 .rate{display:block;color:#ff5722;font-size:12px;margin-top:3px;}
 
-.highlight{
-  background:#ff5722 !important;color:#fff !important;
-}
-.highlight a{color:#fff !important;}
+.highlight{background:#ff5722;color:#fff;}
+.highlight a{color:#fff;}
 
 .payment img{width:200px;display:block;margin:10px auto;}
 
-.social a{
-  display:block;background:#fff;color:#000;text-decoration:none;
-  padding:8px;border-radius:8px;margin:6px 0;
-  text-align:center;font-weight:bold;
-}
-
-.footer{text-align:center;font-size:13px;color:#fff;padding:10px;}
+.footer{text-align:center;color:#fff;font-size:13px;padding:10px;}
 </style>
 </head>
 
 <body>
 <div class="container">
 
+<!-- HEADER -->
 <div class="header">
   <h1>Baba Digital Hub</h1>
-  <p>CSC | Jan Seva | Online Government Services</p>
+  <p>CSC | Jan Seva | Digital Services</p>
   <div class="address">
     Union Bank ke bagal me, Gauri Bazar, Deoria, Uttar Pradesh
   </div>
 </div>
 
+<!-- FINO NOTICE -->
 <div class="notice">
 📞 FINO Payment Bank Retailer ID ke liye sampark kare – <b>7408313391</b>
 </div>
 
-<!-- FACEBOOK CENTER -->
+<!-- DUKAN / JAN SEVA SERVICES -->
+<div class="card">
+<h2>🏪 Jan Seva Kendra Services</h2>
+<div class="services">
+
+<div class="service"><a href="https://wa.me/917408313391?text=AEPS+Service+Enquiry">
+AEPS Cash Withdrawal<span class="rate">₹0</span></a></div>
+
+<div class="service"><a href="https://wa.me/917408313391?text=Insurance+Service+Enquiry">
+Insurance Services<span class="rate">₹476</span></a></div>
+
+<div class="service"><a href="https://wa.me/917408313391?text=Bank+Account+Opening">
+Bank Account Opening<span class="rate">₹129</span></a></div>
+
+<div class="service"><a href="https://wa.me/917408313391?text=FINO+Account+Opening">
+FINO Account Opening<span class="rate">₹599</span></a></div>
+
+<div class="service"><a href="https://wa.me/917408313391?text=Airtel+Payment+Bank+Account">
+Airtel Payment Bank<span class="rate">₹399</span></a></div>
+
+<div class="service"><a href="https://wa.me/917408313391?text=Online+Form+Filling">
+Online Form Filling<span class="rate">₹99</span></a></div>
+
+</div>
+</div>
+
+<!-- CSC / GOVERNMENT -->
+<div class="card">
+<h2>📄 CSC / Government Services</h2>
+<div class="services">
+
+<div class="service"><a href="https://wa.me/917408313391?text=Aadhaar+Service">
+Aadhaar Apply / Update<span class="rate">₹150</span></a></div>
+
+<div class="service"><a href="https://wa.me/917408313391?text=PAN+Card">
+PAN Card<span class="rate">₹170</span></a></div>
+
+<div class="service"><a href="https://wa.me/917408313391?text=Ayushman+Card">
+Ayushman Bharat Card<span class="rate">₹80</span></a></div>
+
+<div class="service"><a href="https://wa.me/917408313391?text=Income+Certificate">
+Income Certificate<span class="rate">₹80</span></a></div>
+
+<div class="service"><a href="https://wa.me/917408313391?text=Caste+Certificate">
+Caste Certificate<span class="rate">₹80</span></a></div>
+
+<div class="service"><a href="https://wa.me/917408313391?text=Domicile+Certificate">
+Domicile Certificate<span class="rate">₹80</span></a></div>
+
+</div>
+</div>
+
+<!-- FACEBOOK -->
 <div class="card">
 <h2>🔥 Facebook Center</h2>
 <div class="services">
-  <div class="service highlight">
-    <a href="https://wa.me/917408313391?text=Facebook+Reel+View+10k+Order">
-      Facebook Reel View 10K
-      <span class="rate">₹175</span>
-    </a>
-  </div>
-  <div class="service">
-    <a href="https://wa.me/917408313391?text=Facebook+Follower+1k+Order">
-      Facebook Followers 1K
-      <span class="rate">₹100</span>
-    </a>
-  </div>
-  <div class="service">
-    <a href="https://wa.me/917408313391?text=Facebook+Like+1k+Order">
-      Facebook Likes 1K
-      <span class="rate">₹80</span>
-    </a>
-  </div>
+
+<div class="service highlight"><a href="https://wa.me/917408313391?text=Facebook+Reel+View+10k">
+Reel View 10K<span class="rate">₹175</span></a></div>
+
+<div class="service"><a href="https://wa.me/917408313391?text=Facebook+Follower+1k">
+Followers 1K<span class="rate">₹100</span></a></div>
+
+<div class="service"><a href="https://wa.me/917408313391?text=Facebook+Like+1k">
+Likes 1K<span class="rate">₹80</span></a></div>
+
 </div>
 </div>
 
-<!-- YOUTUBE CENTER -->
+<!-- YOUTUBE -->
 <div class="card">
 <h2>🔥 YouTube Center</h2>
 <div class="services">
-  <div class="service highlight">
-    <a href="https://wa.me/917408313391?text=YouTube+Subscriber+1k+Order">
-      YouTube Subscribe 1K
-      <span class="rate">₹2850</span>
-    </a>
-  </div>
-  <div class="service">
-    <a href="https://wa.me/917408313391?text=YouTube+Shorts+View+1k+Order">
-      Shorts View 1K (Real)
-      <span class="rate">₹180</span>
-    </a>
-  </div>
-  <div class="service">
-    <a href="https://wa.me/917408313391?text=YouTube+Shorts+Like+1k+Order">
-      Shorts Like 1K
-      <span class="rate">₹100</span>
-    </a>
-  </div>
+
+<div class="service highlight"><a href="https://wa.me/917408313391?text=YouTube+Subscriber+1k">
+Subscribers 1K<span class="rate">₹2850</span></a></div>
+
+<div class="service"><a href="https://wa.me/917408313391?text=YouTube+Shorts+View+1k">
+Shorts View 1K<span class="rate">₹180</span></a></div>
+
+<div class="service"><a href="https://wa.me/917408313391?text=YouTube+Shorts+Like+1k">
+Shorts Like 1K<span class="rate">₹100</span></a></div>
+
 </div>
 </div>
 
-<!-- INSTAGRAM CENTER -->
+<!-- INSTAGRAM -->
 <div class="card">
 <h2>🔥 Instagram Center</h2>
 <div class="services">
-  <div class="service highlight">
-    <a href="https://wa.me/917408313391?text=Instagram+Follower+1k+Order">
-      Instagram Followers 1K
-      <span class="rate">₹180</span>
-    </a>
-  </div>
-  <div class="service">
-    <a href="https://wa.me/917408313391?text=Instagram+Reel+View+100k+Order">
-      Reel Views 100K
-      <span class="rate">₹100</span>
-    </a>
-  </div>
-  <div class="service">
-    <a href="https://wa.me/917408313391?text=Instagram+Like+1k+Order">
-      Instagram Likes 1K
-      <span class="rate">₹80</span>
-    </a>
-  </div>
+
+<div class="service highlight"><a href="https://wa.me/917408313391?text=Instagram+Follower+1k">
+Followers 1K<span class="rate">₹180</span></a></div>
+
+<div class="service"><a href="https://wa.me/917408313391?text=Instagram+Reel+View+100k">
+Reel Views 100K<span class="rate">₹100</span></a></div>
+
+<div class="service"><a href="https://wa.me/917408313391?text=Instagram+Like+1k">
+Likes 1K<span class="rate">₹80</span></a></div>
+
 </div>
 </div>
 
 <!-- PAYMENT -->
 <div class="card payment">
-<h2>Online Payment (UPI)</h2>
-<img src="upi-qr.jpg" alt="UPI QR">
+<h2>💳 Online Payment (UPI)</h2>
+<img src="upi-qr.jpg">
 <p style="text-align:center;font-size:13px;">
 <b>UPI ID:</b> gpay-11264623678@okbizaxis
 </p>
-</div>
-
-<!-- SOCIAL -->
-<div class="card social">
-<h2>Connect With Us</h2>
-<a href="https://www.instagram.com/baba_digital_hub" target="_blank">📸 Instagram</a>
-<a href="https://www.facebook.com/share/1ADEMGCsip/" target="_blank">📘 Facebook</a>
-<a href="https://whatsapp.com/channel/0029Vb7JYjrDp2Q02NiWcM28" target="_blank">💬 WhatsApp Channel</a>
-<a href="https://youtube.com/@baba_digital_hub" target="_blank">▶️ YouTube</a>
 </div>
 
 </div>
